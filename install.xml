@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>Database Optimizer</name>
+    <code>database_optimizer</code>
+    <version>1.0</version>
+    <author>Your Name</author>
+    <file path="admin/controller/marketplace/extension.php">
+        <operation>
+            <search><![CDATA[$data['extensions'] = array();]]></search>
+            <add position="after"><![CDATA[
+                $data['extensions'][] = array(
+                    'name' => 'Database Optimizer',
+                    'href' => $this->url->link('extension/module/database_optimizer', 'user_token=' . $this->session->data['user_token'], true)
+                );
+            ]]></add>
+        </operation>
+    </file>
+</modification>
