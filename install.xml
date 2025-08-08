@@ -3,7 +3,8 @@
     <name>Database Optimizer</name>
     <code>database_optimizer</code>
     <version>1.0</version>
-    <author>Your Name</author>
+    <author>CaspianCMS</author>
+    <link>https://www.caspiancms.ir</link>
     <file path="admin/controller/marketplace/extension.php">
         <operation>
             <search><![CDATA[$data['extensions'] = array();]]></search>
